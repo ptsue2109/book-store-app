@@ -9,6 +9,8 @@ import { DividerModule } from 'primeng/divider';
 import { AvatarModule } from 'primeng/avatar';
 import { BadgeModule } from 'primeng/badge';
 import { ScrollTopModule } from 'primeng/scrolltop';
+import {CarouselModule} from 'primeng/carousel';
+import {DropdownModule} from 'primeng/dropdown';
 @NgModule({
   providers: [MessageService],
   exports: [
@@ -20,7 +22,9 @@ import { ScrollTopModule } from 'primeng/scrolltop';
     DividerModule,
     AvatarModule,
     BadgeModule,
-    ScrollTopModule
+    CarouselModule,
+    ScrollTopModule,
+    DropdownModule
   ],
 })
 export class PrimengModule { }

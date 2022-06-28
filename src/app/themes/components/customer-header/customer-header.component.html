@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header mb-3">
     <div class="top-header grid gap-5">
         <div class="col-2">
             <div class="social_header flex justify-content-end gap-3">
@@ -36,9 +36,9 @@
     <div class="header-content flex gap-5 align-items-center">
         <div class="col-4">
             <div class="searchbar flex justify-content-center">
-                <form #search="ngForm">
-                    <input type="text" name="keyword" ngModel required
-                        class="form-control outline-none p-2 custom_input" placeholder=" tìm kiếm..." />
+                <form>
+                    <input type="text" name="keyword" required class="form-control outline-none p-2 custom_input"
+                        placeholder=" tìm kiếm..." />
                     <button pButton type="button" icon="pi pi-search"
                         class="p-button-rounded p-button-success p-button-text custom_btn"></button>
                 </form>
@@ -64,10 +64,23 @@
             </div>
         </div>
     </div>
-</div>
 
-<div class="banner ">
-    <a href="">
-        <img src="https://theme.hstatic.net/200000343865/1000796725/14/ms_banner_img1.jpg?v=441 " class="w-full h-50" alt="">
-    </a>
+   
+
+    <!-- <div class="banner max-w-full relative">
+        <p-carousel [value]="cars" [autoplayInterval]="5000" [circular]="true" [showIndicators]="false"
+            [showNavigators]="true">
+            <ng-template let-item pTemplate="item">
+                <img src="{{ item.image }}" class="w-full max-h-30rem" />
+            </ng-template>
+        </p-carousel>
+    </div> -->
+
+    <!-- <div class="cate-content__breacrumb-overlay">
+        <img src="https://res.cloudinary.com/asm-ph13269/image/upload/v1654951376/breadcrumb_bg2_rvatam.jpg"
+            class="imgCategory" />
+        <div class="cate-content__breacrumb-overlay--inner inner">
+            HELLO
+        </div>
+    </div> -->
 </div>
